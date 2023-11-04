@@ -1341,7 +1341,7 @@ Derived from `basic-qb45-mode'.  For more information, see `basic-mode'."
 Derived from `basic-mode'."
 
   (setq basic-functions
-        '(("print" "p\\." "circle" "ellipse" "fill" "mouse" "origin"
+        '("print" "p\\." "circle" "ellipse" "fill" "mouse" "origin"
            "quit" "rectangle" "swap" "sys" "tint" "wait" "install"
            "private" "by" "exit" "error" "line" "off" "step" "spc"
            "tab" "openin" "ptr" "page" "time" "time$" "lomem" "himem"
