@@ -1335,6 +1335,57 @@ This is the default mode that will be used if no sub mode is specified.
 Derived from `basic-qb45-mode'.  For more information, see `basic-mode'."
   (basic-mode-initialize))
 
+;;;###autoload
+(define-derived-mode basic-bbc-mode basic-mode "Basic[BBC]"
+  "Programming mode for BBC BASIC.
+Derived from `basic-mode'."
+
+  (setq basic-functions
+        '(("print" "p\\." "circle" "ellipse" "fill" "mouse" "origin"
+           "quit" "rectangle" "swap" "sys" "tint" "wait" "install"
+           "private" "by" "exit" "error" "line" "off" "step" "spc"
+           "tab" "openin" "ptr" "page" "time" "time$" "lomem" "himem"
+           "abs" "acs" "adval" "asc" "asn" "atn" "bget" "cos" "count"
+           "deg" "erl" "err" "eval" "exp" "ext" "false" "get" "inkey"
+           "instr" "int" "len" "ln" "log" "not" "openup" "openout"
+           "pi" "point" "pos" "rad" "rnd" "sgn" "sin" "sqr" "tan"
+           "top" "true" "usr" "val" "vpos" "chr$" "get$" "inkey$" "left$"
+           "mid$" "right$" "str$" "string$" "a\\." "au\\." "b\\." "bp\\."
+           "ca\\." "ch\\." "chr\\." "cl\\." "clo\\." "c\\." "cou\\."
+           "d\\." "del\\." "dr\\." "e\\." "el\\." "end\\." "env\\."
+           "ev\\." "fa\\." "f\\." "gc\\." "g\\." "h\\." "ink\\." "i\\."
+           "ins\\." "l\\." "lo\\." "loc\\." "lom\\." "m\\." "mo\\."
+           "mov\\." "n\\." "o\\." "op\\." "openo\\." "openu\\." "pa\\."
+           "pl\\." "po\\." "p\\." "pro\\." "pt\\." "rea\\." "ren\\."
+           "rep\\." "repo\\." "res\\." "r\\." "ri\\." "sa\\." "so\\."
+           "s\\." "sto\\." "str\\." "stri\\." "t\\." "th\\." "ti\\."
+           "tr\\." "u\\." "v\\." "vp\\." "w\\."))
+
+  (setq basic-builtins '("clear" "cls" "copy" "fast" "input" "let"
+                         "list" "llist" "load" "lprint" "new" "pause"
+                         "plot" "poke" "print" "rand" "run" "save"
+                         "scroll" "slow" "unplot"))
+
+  (setq basic-keywords '("step" "stop" "to" "else" "then" "while" "case"
+                         "endcase" "endwhile" "endif" "otherwise" "end"
+                         "to" "sound" "bput" "call" "chain" "clear"
+                         "close" "clg" "cls" "data" "def" "dim" "draw"
+                         "end" "endproc" "envelope" "for" "gosub" "goto"
+                         "gcol" "if" "input" "let" "local" "mode" "move"
+                         "next" "on" "vdu" "plot" "print" "proc" "read"
+                         "repeat" "report" "report$" "restore" "return"
+                         "run" "stop" "colour" "color" "trace"
+                         "until" "width" "oscli"))
+
+  (setq basic-types nil)
+
+  (setq basic-increase-indent-keywords-bol '("for" "repeat" "def" "proc" "if" "while" "case"))
+  (setq basic-increase-indent-keywords-eol '("else" "then"))
+  (setq basic-decrease-indent-keywords-bol '("next" "until" "endproc" "endif" "endwhile" "endcase" "end"))
+
+  (basic-mode-initialize))
+
+
 ;;;###autoload (add-to-list 'auto-mode-alist '("\\.bas\\'" . basic-generic-mode))
 
 ;; ----------------------------------------------------------------------------
