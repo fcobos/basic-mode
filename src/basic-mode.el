@@ -1379,9 +1379,9 @@ Derived from `basic-mode'."
 
   (setq basic-types nil)
 
-  (setq basic-increase-indent-keywords-bol '("for" "repeat" "def" "while" "case"))
-  (setq basic-increase-indent-keywords-eol nil)
-  (setq basic-decrease-indent-keywords-bol '("next" "until" "endproc" "endif" "endwhile" "endcase" "end"))
+  (setq basic-increase-indent-keywords-bol '("FOR" "REPEAT" "DEF" "WHILE" "CASE"))
+  (setq basic-increase-indent-keywords-eol '("REPEAT"))
+  (setq basic-decrease-indent-keywords-bol '("NEXT" "UNTIL" "ENDPROC" "REPEAT UNTIL" "ENDIF" "ENDWHILE" "ENDCASE" "END"))
 
   (basic-mode-initialize))
 
