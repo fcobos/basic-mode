@@ -1341,46 +1341,46 @@ Derived from `basic-qb45-mode'.  For more information, see `basic-mode'."
 Derived from `basic-mode'."
 
   (setq basic-functions
-        '("print" "p\\." "circle" "ellipse" "fill" "mouse" "origin"
-           "quit" "rectangle" "swap" "sys" "tint" "wait" "install"
-           "private" "by" "exit" "error" "line" "off" "step" "spc"
-           "tab" "openin" "ptr" "page" "time" "time$" "lomem" "himem"
-           "abs" "acs" "adval" "asc" "asn" "atn" "bget" "cos" "count"
-           "deg" "erl" "err" "eval" "exp" "ext" "false" "get" "inkey"
-           "instr" "int" "len" "ln" "log" "not" "openup" "openout"
-           "pi" "point" "pos" "rad" "rnd" "sgn" "sin" "sqr" "tan"
-           "top" "true" "usr" "val" "vpos" "chr$" "get$" "inkey$" "left$"
-           "mid$" "right$" "str$" "string$" "a\\." "au\\." "b\\." "bp\\."
-           "ca\\." "ch\\." "chr\\." "cl\\." "clo\\." "c\\." "cou\\."
-           "d\\." "del\\." "dr\\." "e\\." "el\\." "end\\." "env\\."
-           "ev\\." "fa\\." "f\\." "gc\\." "g\\." "h\\." "ink\\." "i\\."
-           "ins\\." "l\\." "lo\\." "loc\\." "lom\\." "m\\." "mo\\."
-           "mov\\." "n\\." "o\\." "op\\." "openo\\." "openu\\." "pa\\."
-           "pl\\." "po\\." "p\\." "pro\\." "pt\\." "rea\\." "ren\\."
-           "rep\\." "repo\\." "res\\." "r\\." "ri\\." "sa\\." "so\\."
-           "s\\." "sto\\." "str\\." "stri\\." "t\\." "th\\." "ti\\."
-           "tr\\." "u\\." "v\\." "vp\\." "w\\."))
+        '("PRINT" "P\\." "CIRCLE" "ELLIPSE" "FILL" "MOUSE" "ORIGIN"
+           "QUIT" "RECTANGLE" "SWAP" "SYS" "TINT" "WAIT" "INSTALL"
+           "PRIVATE" "BY" "EXIT" "ERROR" "LINE" "OFF" "STEP" "SPC"
+           "TAB" "OPENIN" "PTR" "PAGE" "TIME" "TIME$" "LOMEM" "HIMEM"
+           "ABS" "ACS" "ADVAL" "ASC" "ASN" "ATN" "BGET" "COS" "COUNT"
+           "DEG" "ERL" "ERR" "EVAL" "EXP" "EXT" "FALSE" "GET" "INKEY"
+           "INSTR" "INT" "LEN" "LN" "LOG" "NOT" "OPENUP" "OPENOUT"
+           "PI" "POINT" "POS" "RAD" "RND" "SGN" "SIN" "SQR" "TAN"
+           "TOP" "TRUE" "USR" "VAL" "VPOS" "CHR$" "GET$" "INKEY$" "LEFT$"
+           "MID$" "RIGHT$" "STR$" "STRING$" "A\\." "AU\\." "B\\." "BP\\."
+           "CA\\." "CH\\." "CHR\\." "CL\\." "CLO\\." "C\\." "COU\\."
+           "D\\." "DEL\\." "DR\\." "E\\." "EL\\." "END\\." "ENV\\."
+           "EV\\." "FA\\." "F\\." "GC\\." "G\\." "H\\." "INK\\." "I\\."
+           "INS\\." "L\\." "LO\\." "LOC\\." "LOM\\." "M\\." "MO\\."
+           "MOV\\." "N\\." "O\\." "OP\\." "OPENO\\." "OPENU\\." "PA\\."
+           "PL\\." "PO\\." "P\\." "PRO\\." "PT\\." "REA\\." "REN\\."
+           "REP\\." "REPO\\." "RES\\." "R\\." "RI\\." "SA\\." "SO\\."
+           "S\\." "STO\\." "STR\\." "STRI\\." "T\\." "TH\\." "TI\\."
+           "TR\\." "U\\." "V\\." "VP\\." "W\\."))
 
-  (setq basic-builtins '("clear" "cls" "copy" "fast" "input" "let"
-                         "list" "llist" "load" "lprint" "new" "pause"
-                         "plot" "poke" "print" "rand" "run" "save"
-                         "scroll" "slow" "unplot"))
+  (setq basic-builtins '("CLEAR" "CLS" "COPY" "FAST" "INPUT" "LET"
+                         "LIST" "LLIST" "LOAD" "LPRINT" "NEW" "PAUSE"
+                         "PLOT" "POKE" "PRINT" "RAND" "RUN" "SAVE"
+                         "SCROLL" "SLOW" "UNPLOT"))
 
-  (setq basic-keywords '("step" "stop" "to" "else" "then" "while" "case"
-                         "endcase" "endwhile" "endif" "otherwise" "end"
-                         "to" "sound" "bput" "call" "chain" "clear"
-                         "close" "clg" "cls" "data" "def" "dim" "draw"
-                         "end" "endproc" "envelope" "for" "gosub" "goto"
-                         "gcol" "if" "input" "let" "local" "mode" "move"
-                         "next" "on" "vdu" "plot" "print" "proc" "read"
-                         "repeat" "report" "report$" "restore" "return"
-                         "run" "stop" "colour" "color" "trace"
-                         "until" "width" "oscli"))
+  (setq basic-keywords '("STEP" "STOP" "TO" "ELSE" "THEN" "WHILE" "CASE"
+                         "ENDCASE" "ENDWHILE" "ENDIF" "OTHERWISE" "END"
+                         "TO" "SOUND" "BPUT" "CALL" "CHAIN" "CLEAR"
+                         "CLOSE" "CLG" "CLS" "DATA" "DEF" "DIM" "DRAW"
+                         "END" "ENDPROC" "ENVELOPE" "FOR" "GOSUB" "GOTO"
+                         "GCOL" "IF" "INPUT" "LET" "LOCAL" "MODE" "MOVE"
+                         "NEXT" "ON" "VDU" "PLOT" "PRINT" "PROC" "READ"
+                         "REPEAT" "REPORT" "REPORT$" "RESTORE" "RETURN"
+                         "RUN" "STOP" "COLOUR" "COLOR" "TRACE"
+                         "UNTIL" "WIDTH" "OSCLI"))
 
   (setq basic-types nil)
 
   (setq basic-increase-indent-keywords-bol '("for" "repeat" "def" "while" "case"))
-  (setq basic-increase-indent-keywords-eol '("else" "then"))
+  (setq basic-increase-indent-keywords-eol nil)
   (setq basic-decrease-indent-keywords-bol '("next" "until" "endproc" "endif" "endwhile" "endcase" "end"))
 
   (basic-mode-initialize))
